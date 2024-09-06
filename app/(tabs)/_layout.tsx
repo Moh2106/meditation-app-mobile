@@ -3,6 +3,7 @@ import React from "react";
 import { Tabs } from "expo-router";
 import Colors from "@/constants/Colors";
 import MaterialCommunityIcons from "@expo/vector-icons/MaterialCommunityIcons";
+import Entypo from "@expo/vector-icons/Entypo";
 
 const TabsLayout = () => {
   return (
@@ -22,6 +23,16 @@ const TabsLayout = () => {
               size={24}
               color={color}
             />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="affirmative"
+        options={{
+          tabBarLabel: "Affirmative",
+          tabBarIcon: ({ color }) => (
+            <Entypo name="open-book" size={24} color={color} />
           ),
         }}
       />
